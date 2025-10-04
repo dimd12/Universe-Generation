@@ -33,6 +33,8 @@ import java.util.Objects;
  */
 public final class Satellite extends CelestialObject {
 
+    // --- Fields ---
+
     /** The classification of the satellite based on its orbit and origin. */
     private SatelliteTypes satType;
 
@@ -44,6 +46,8 @@ public final class Satellite extends CelestialObject {
 
     /** Orbital distance from its host planet (units depend on context, e.g., km). */
     private double distanceFromPlanet;
+
+    // --- Constructors ---
 
     /**
      * Default constructor.
@@ -95,7 +99,7 @@ public final class Satellite extends CelestialObject {
         this.distanceFromPlanet = distanceFromPlanet;
     }
 
-    // --- Getters and setters with Javadoc ---
+    // --- Getters and setters ---
 
     /** @return the satellite type */
     public SatelliteTypes getSatType() {
