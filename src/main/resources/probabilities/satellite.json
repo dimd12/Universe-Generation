@@ -1,0 +1,69 @@
+{
+  "has_satellites_chance_by_planet_type": {
+    "ROCKY": 0.35,
+    "OCEAN": 0.45,
+    "DESERT": 0.30,
+    "LAVA": 0.10,
+    "GAS_GIANT": 0.98,
+    "ICE_GIANT": 0.95,
+    "DWARF": 0.20
+  },
+
+  "satellite_count_by_planet_type": {
+    "ROCKY": { "min": 0, "max": 2 },
+    "OCEAN": { "min": 0, "max": 3 },
+    "DESERT": { "min": 0, "max": 2 },
+    "LAVA": { "min": 0, "max": 1 },
+    "GAS_GIANT": { "min": 3, "max": 12 },
+    "ICE_GIANT": { "min": 2, "max": 8 },
+    "DWARF": { "min": 0, "max": 3 }
+  },
+
+  "type_weights_by_planet_type": {
+    "ROCKY":      { "REGULAR": 0.60, "IRREGULAR": 0.30, "CAPTURED": 0.10 },
+    "OCEAN":      { "REGULAR": 0.65, "IRREGULAR": 0.25, "CAPTURED": 0.10 },
+    "DESERT":     { "REGULAR": 0.50, "IRREGULAR": 0.35, "CAPTURED": 0.15 },
+    "LAVA":       { "REGULAR": 0.40, "IRREGULAR": 0.40, "CAPTURED": 0.20 },
+    "GAS_GIANT":  { "REGULAR": 0.75, "IRREGULAR": 0.15, "CAPTURED": 0.10 },
+    "ICE_GIANT":  { "REGULAR": 0.60, "IRREGULAR": 0.25, "CAPTURED": 0.15 },
+    "DWARF":      { "REGULAR": 0.30, "IRREGULAR": 0.40, "CAPTURED": 0.30 }
+  },
+
+  "composition_weights_type": {
+    "REGULAR": {
+      "ROCKY_SILICATE": 0.45,
+      "ICE_RICH": 0.25,
+      "MIXED_ICE_ROCK": 0.25,
+      "METALLIC_FRAGMENT": 0.03,
+      "RUBBLE_PILE": 0.02
+    },
+    "IRREGULAR": {
+      "MIXED_ICE_ROCK": 0.35,
+      "ICE_RICH": 0.30,
+      "RUBBLE_PILE": 0.20,
+      "ROCKY_SILICATE": 0.10,
+      "METALLIC_FRAGMENT": 0.05
+    },
+    "CAPTURED": {
+      "RUBBLE_PILE": 0.35,
+      "METALLIC_FRAGMENT": 0.25,
+      "MIXED_ICE_ROCK": 0.20,
+      "ROCKY_SILICATE": 0.15,
+      "ICE_RICH": 0.05
+    }
+  },
+
+  "distance_by_satellite_type": {
+    "REGULAR":   { "min": 3,  "max": 60 },
+    "IRREGULAR": { "min": 80, "max": 300 },
+    "CAPTURED":  { "min": 30, "max": 500 }
+  },
+
+  "size_by_composition": {
+    "ROCKY_SILICATE":   { "min": 5,   "max": 1500 },
+    "ICE_RICH":         { "min": 5,   "max": 1200 },
+    "MIXED_ICE_ROCK":   { "min": 5,   "max": 1300 },
+    "METALLIC_FRAGMENT":{ "min": 1,   "max": 60 },
+    "RUBBLE_PILE":      { "min": 1,   "max": 40 }
+  }
+}
