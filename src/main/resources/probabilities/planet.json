@@ -254,5 +254,26 @@
       "METHANE": 0.00,
       "H2_HE": 0.00
     }
+  },
+
+  "color_by_type": {
+    "ROCKY": "BEIGE",
+    "GAS_GIANT": "DARK_BROWN",
+    "ICE_GIANT": "LIGHT_BLUE",
+    "OCEAN": "DARK_BLUE",
+    "DESERT": "YELLOW",
+    "LAVA": "ORANGE-RED",
+    "DWARF": "GREY"
+  },
+
+  "radius_by_type": {
+    "ROCKY":    { "min": 0.35, "max": 1.80 },
+    "OCEAN":    { "min": 0.80, "max": 1.70 },
+    "DESERT":   { "min": 0.45, "max": 1.30 },
+    "LAVA":     { "min": 0.30, "max": 1.20 },
+    "GAS_GIANT":{ "min": 7.00, "max": 15.00 },
+    "ICE_GIANT":{ "min": 2.50, "max": 5.50 },
+    "DWARF":    { "min": 0.05, "max": 0.30 }
   }
+
 }
