@@ -1,0 +1,258 @@
+{
+
+  "type_weights": {
+    "ROCKY": 0.45,
+    "GAS_GIANT": 0.15,
+    "ICE_GIANT": 0.12,
+    "OCEAN": 0.08,
+    "DESERT": 0.12,
+    "LAVA": 0.03,
+    "DWARF": 0.05
+  },
+
+  "distance_by_type": {
+    "ROCKY": { "min": 0.3, "max": 2.5 },
+    "GAS_GIANT": { "min": 3.0, "max": 20.0 },
+    "ICE_GIANT": { "min": 5.0, "max": 40.0 },
+    "OCEAN": { "min": 0.5, "max": 1.8 },
+    "DESERT": { "min": 0.2, "max": 3.0 },
+    "LAVA": { "min": 0.05, "max": 0.7 },
+    "DWARF": { "min": 10.0, "max": 60.0 }
+  },
+
+  "composition_weights_by_type": {
+    "ROCKY": {
+      "ROCKY_SILICATE": 0.70,
+      "ROCKY_IRON_RICH": 0.25,
+      "CARBON_WORLD": 0.05,
+      "OCEAN_WORLD": 0.0,
+      "GAS_GIANT_H2_HE": 0.0,
+      "ICE_GIANT_H2_HE_CH4": 0.0,
+      "LAVA_WORLD": 0.0,
+      "DESERT_WORLD": 0.0,
+      "DWARF_ICE_ROCK": 0.0
+    },
+    "OCEAN": {
+      "OCEAN_WORLD": 1.0,
+      "ROCKY_SILICATE": 0.0,
+      "ROCKY_IRON_RICH": 0.0,
+      "CARBON_WORLD": 0.0,
+      "GAS_GIANT_H2_HE": 0.0,
+      "ICE_GIANT_H2_HE_CH4": 0.0,
+      "LAVA_WORLD": 0.0,
+      "DESERT_WORLD": 0.0,
+      "DWARF_ICE_ROCK": 0.0
+    },
+    "DESERT": {
+      "DESERT_WORLD": 0.80,
+      "ROCKY_SILICATE": 0.20,
+      "ROCKY_IRON_RICH": 0.0,
+      "CARBON_WORLD": 0.0,
+      "OCEAN_WORLD": 0.0,
+      "GAS_GIANT_H2_HE": 0.0,
+      "ICE_GIANT_H2_HE_CH4": 0.0,
+      "LAVA_WORLD": 0.0,
+      "DWARF_ICE_ROCK": 0.0
+    },
+    "LAVA": {
+      "LAVA_WORLD": 1.0,
+      "ROCKY_SILICATE": 0.0,
+      "ROCKY_IRON_RICH": 0.0,
+      "CARBON_WORLD": 0.0,
+      "OCEAN_WORLD": 0.0,
+      "GAS_GIANT_H2_HE": 0.0,
+      "ICE_GIANT_H2_HE_CH4": 0.0,
+      "DESERT_WORLD": 0.0,
+      "DWARF_ICE_ROCK": 0.0
+    },
+    "GAS_GIANT": {
+      "GAS_GIANT_H2_HE": 1.0,
+      "ROCKY_SILICATE": 0.0,
+      "ROCKY_IRON_RICH": 0.0,
+      "CARBON_WORLD": 0.0,
+      "OCEAN_WORLD": 0.0,
+      "ICE_GIANT_H2_HE_CH4": 0.0,
+      "LAVA_WORLD": 0.0,
+      "DESERT_WORLD": 0.0,
+      "DWARF_ICE_ROCK": 0.0
+    },
+    "ICE_GIANT": {
+      "ICE_GIANT_H2_HE_CH4": 1.0,
+      "ROCKY_SILICATE": 0.0,
+      "ROCKY_IRON_RICH": 0.0,
+      "CARBON_WORLD": 0.0,
+      "OCEAN_WORLD": 0.0,
+      "GAS_GIANT_H2_HE": 0.0,
+      "LAVA_WORLD": 0.0,
+      "DESERT_WORLD": 0.0,
+      "DWARF_ICE_ROCK": 0.0
+    },
+    "DWARF": {
+      "DWARF_ICE_ROCK": 1.0,
+      "ROCKY_SILICATE": 0.0,
+      "ROCKY_IRON_RICH": 0.0,
+      "CARBON_WORLD": 0.0,
+      "OCEAN_WORLD": 0.0,
+      "GAS_GIANT_H2_HE": 0.0,
+      "ICE_GIANT_H2_HE_CH4": 0.0,
+      "LAVA_WORLD": 0.0,
+      "DESERT_WORLD": 0.0
+    }
+  },
+
+  "atmosphere_weights_by_type": {
+    "ROCKY": {
+      "NONE": 0.20,
+      "THIN": 0.30,
+      "EARTHLIKE": 0.12,
+      "DENSE": 0.10,
+      "TOXIC": 0.08,
+      "CO2": 0.10,
+      "METHANE": 0.05,
+      "H2_HE": 0.05
+    },
+    "GAS_GIANT": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.05,
+      "H2_HE": 0.95
+    },
+    "ICE_GIANT": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.40,
+      "H2_HE": 0.60
+    },
+    "OCEAN": {
+      "NONE": 0.03,
+      "THIN": 0.08,
+      "EARTHLIKE": 0.40,
+      "DENSE": 0.20,
+      "TOXIC": 0.10,
+      "CO2": 0.10,
+      "METHANE": 0.07,
+      "H2_HE": 0.02
+    },
+    "DESERT": {
+      "NONE": 0.15,
+      "THIN": 0.25,
+      "EARTHLIKE": 0.05,
+      "DENSE": 0.10,
+      "TOXIC": 0.10,
+      "CO2": 0.25,
+      "METHANE": 0.08,
+      "H2_HE": 0.02
+    },
+    "LAVA": {
+      "NONE": 0.00,
+      "THIN": 0.02,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.35,
+      "TOXIC": 0.45,
+      "CO2": 0.15,
+      "METHANE": 0.02,
+      "H2_HE": 0.01
+    },
+    "DWARF": {
+      "NONE": 0.50,
+      "THIN": 0.30,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.15,
+      "METHANE": 0.05,
+      "H2_HE": 0.00
+    }
+  },
+
+  "rings_weights": {
+    "ROCKY": 0.05,
+    "GAS_GIANT": 0.80,
+    "ICE_GIANT": 0.60,
+    "OCEAN": 0.10,
+    "DESERT": 0.05,
+    "LAVA": 0.05,
+    "DWARF": 0.10
+  },
+
+  "habitability_weights_by_type_and_atmosphere": {
+    "ROCKY": {
+      "NONE": 0.01,
+      "THIN": 0.10,
+      "EARTHLIKE": 0.70,
+      "DENSE": 0.01,
+      "TOXIC": 0.01,
+      "CO2": 0.15,
+      "METHANE": 0.01,
+      "H2_HE": 0.01
+    },
+    "GAS_GIANT": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.00,
+      "H2_HE": 0.00
+    },
+    "ICE_GIANT": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.00,
+      "H2_HE": 0.00
+    },
+    "OCEAN": {
+      "NONE": 0.01,
+      "THIN": 0.10,
+      "EARTHLIKE": 0.70,
+      "DENSE": 0.01,
+      "TOXIC": 0.01,
+      "CO2": 0.15,
+      "METHANE": 0.01,
+      "H2_HE": 0.01
+    },
+    "DESERT": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.00,
+      "H2_HE": 0.00
+    },
+    "LAVA": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.00,
+      "H2_HE": 0.00
+    },
+    "DWARF": {
+      "NONE": 0.00,
+      "THIN": 0.00,
+      "EARTHLIKE": 0.00,
+      "DENSE": 0.00,
+      "TOXIC": 0.00,
+      "CO2": 0.00,
+      "METHANE": 0.00,
+      "H2_HE": 0.00
+    }
+  }
+}
