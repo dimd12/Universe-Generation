@@ -1,0 +1,17 @@
+{
+
+  "system_age": { "min": 0.5, "max": 12.0 },
+
+  "planet_count": { "min":  0, "max":  12.0 },
+
+  "planet_count_multiplier_by_star_type": {
+    "O": 0.4,
+    "B": 0.6,
+    "A": 0.8,
+    "F": 0.9,
+    "G": 1.0,
+    "K": 1.1,
+    "M": 1.2
+  }
+
+}

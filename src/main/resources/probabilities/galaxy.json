@@ -21,12 +21,12 @@
     "IRREGULAR": {
       "diameter": { "min": 10000, "max": 30000 },
       "solar_systems": { "min": 1000, "max": 30000 },
-      "brightness": { "LOW": 0.50, "MEDIUM": 0.45, "HIGH": 0.05},
+      "brightness": { "LOW": 0.50, "MEDIUM": 0.45, "HIGH": 0.05 },
       "black_hole_presence": 0.50
     }
   },
 
-  "seed": { "min": -238754, "max": 2758637},
+  "seed": { "min": -238754, "max": 2758637 },
 
   "galaxy_age": { "min": 10, "max":  14 }
 
