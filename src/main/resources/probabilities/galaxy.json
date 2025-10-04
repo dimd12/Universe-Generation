@@ -1,4 +1,5 @@
 {
+
   "type_weights": {
     "SPIRAL": 0.65,
     "ELLIPTICAL": 0.20,
