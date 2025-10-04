@@ -27,6 +27,8 @@ import java.util.Objects;
  */
 public final class SolarSystem {
 
+    // --- Fields ---
+
     /** Unique identifier for the solar system. */
     private int id;
 
@@ -50,6 +52,8 @@ public final class SolarSystem {
 
     /** Age of the solar system in billions of years. */
     private double age;
+
+    // --- Constructors ---
 
     /** Default constructor (for serialization/frameworks). */
     public SolarSystem() {
@@ -78,6 +82,8 @@ public final class SolarSystem {
         this.seed = seed;
         this.age = age;
     }
+
+    // --- Getters and setters ---
 
     /** @return the solar system id */
     public int getId() {
@@ -158,6 +164,8 @@ public final class SolarSystem {
     public void setAge(double age) {
         this.age = age;
     }
+
+    // --- Object overrides ---
 
     /**
      * Computes a hash code based on all fields.
