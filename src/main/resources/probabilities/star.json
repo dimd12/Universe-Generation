@@ -1,0 +1,89 @@
+{
+
+  "type_weights": {
+    "O": {
+      "temperature": { "min": 30000, "max": 40000 },
+      "color": "#cfdfff",
+      "brightness": { "min": 30000, "max": 1000000 },
+      "mass": { "min": 16.0, "max": 60.0 },
+      "spawn_weight": 0.0001
+    },
+    "B": {
+      "temperature_k": { "min": 10000, "max": 30000 },
+      "color_hex": "#dbe1ff",
+      "brightness_lsun": { "min": 100, "max": 30000 },
+      "mass_msun": { "min": 2.1, "max": 16.0 },
+      "spawn_weight": 0.001
+    },
+    "A": {
+      "temperature_k": { "min": 7500, "max": 10000 },
+      "color_hex": "#f2f7ff",
+      "brightness_lsun": { "min": 5, "max": 100 },
+      "mass_msun": { "min": 1.4, "max": 2.1 },
+      "spawn_weight": 0.006
+    },
+    "F": {
+      "temperature_k": { "min": 6000, "max": 7500 },
+      "color_hex": "#fff4ea",
+      "brightness_lsun": { "min": 1.5, "max": 5 },
+      "mass_msun": { "min": 1.04, "max": 1.4 },
+      "spawn_weight": 0.03
+    },
+    "G": {
+      "temperature_k": { "min": 5200, "max": 6000 },
+      "color_hex": "#fff0c9",
+      "brightness_lsun": { "min": 0.6, "max": 1.5 },
+      "mass_msun": { "min": 0.8, "max": 1.04 },
+      "spawn_weight": 0.076
+    },
+    "K": {
+      "temperature_k": { "min": 3700, "max": 5200 },
+      "color_hex": "#ffd8a1",
+      "brightness_lsun": { "min": 0.1, "max": 0.6 },
+      "mass_msun": { "min": 0.45, "max": 0.8 },
+      "spawn_weight": 0.12
+    },
+    "M": {
+      "temperature_k": { "min": 2400, "max": 3700 },
+      "color_hex": "#ffb07b",
+      "brightness_lsun": { "min": 0.01, "max": 0.1 },
+      "mass_msun": { "min": 0.08, "max": 0.45 },
+      "spawn_weight": 0.766
+    }
+  },
+
+  "stage_weights": {
+    "PROTOSTAR":     0.0019,
+    "MAIN_SEQUENCE": 0.9350,
+    "SUBGIANT":      0.0200,
+    "GIANT":         0.0200,
+    "SUPERNOVA":     0.00001,
+    "WHITE_DWARF":   0.0230,
+    "NEUTRON_STAR":  0.00006,
+    "BLACK_HOLE":    0.00003
+  },
+
+  "composition_weights": {
+    "POP_I": 0.95,
+    "POP_II": 0.049,
+    "POP_III": 0.001
+  },
+
+  "flare_chance_by_type": {
+    "O": 0.01,
+    "B": 0.02,
+    "A": 0.03,
+    "F": 0.05,
+    "G": 0.10,
+    "K": 0.20,
+    "M": 0.35
+  },
+
+  "stage_luminosity_multipliers": {
+    "MAIN_SEQUENCE": { "min": 1.0, "max": 1.0 },
+    "SUBGIANT": { "min": 2.0, "max": 10.0 },
+    "GIANT": { "min": 10.0, "max": 100.0 },
+    "WHITE_DWARF": { "min": 0.001, "max": 0.1 }
+  }
+
+}
