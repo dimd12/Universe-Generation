@@ -33,6 +33,8 @@ import java.util.Objects;
  */
 public final class Planet extends CelestialObject {
 
+    // --- Fields ---
+
     /** The general category of the planet (rocky, gas giant, ice giant, etc.). */
     private PlanetTypes planetType;
 
@@ -50,6 +52,8 @@ public final class Planet extends CelestialObject {
 
     /** Whether the planet has planetary rings. */
     private boolean hasRings;
+
+    // --- Constructors ---
 
     /**
      * Default constructor.
@@ -109,7 +113,7 @@ public final class Planet extends CelestialObject {
         this.hasRings = hasRings;
     }
 
-    // --- Getters and setters with Javadoc ---
+    // --- Getters and setters ---
 
     /** @return the planet type */
     public PlanetTypes getPlanetType() {
