@@ -43,7 +43,7 @@ public enum SatelliteTypes {
      *  {@link com.universe.enums.elements.SatelliteComposition#MIXED_ICE_ROCK}. */
     REGULAR,
 
-    /** Irregular moon: Typically small, distant; eccentric, inclined or retrograde orbits (often captured).
+    /** Irregular moon: Typically small, distant, eccentric, inclined or retrograde orbits (often captured).
      *  Common compositions: {@link com.universe.enums.elements.SatelliteComposition#ICE_RICH},
      *  {@link com.universe.enums.elements.SatelliteComposition#MIXED_ICE_ROCK},
      *  {@link com.universe.enums.elements.SatelliteComposition#RUBBLE_PILE}. */
