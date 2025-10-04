@@ -40,6 +40,7 @@ import java.util.Objects;
  * <li>{@link #name} – galaxy name</li>
  * <li>{@link #type} – galaxy morphology/type</li>
  * <li>{@link #age} – age in billions of years</li>
+ * <li>{@link #diameter} - diameter in light-years</li>
  * <li>{@link #solarSystems} – list of solar systems in this galaxy</li>
  * <li>{@link #brightness} – relative brightness/luminosity</li>
  * <li>{@link #blackHolePresence} – whether the galaxy hosts a central black
@@ -53,6 +54,8 @@ import java.util.Objects;
  */
 public final class Galaxy {
 
+    // --- Fields
+    
     /**
      * Unique identifier for the galaxy.
      */
@@ -74,6 +77,11 @@ public final class Galaxy {
     private double age;
 
     /**
+     * Diameter of the galaxy in light-years.
+     * */
+    private double diameter;
+
+    /**
      * Collection of {@link SolarSystem}s contained within this galaxy.
      */
     private ArrayList<SolarSystem> solarSystems;
@@ -89,10 +97,12 @@ public final class Galaxy {
     private boolean blackHolePresence;
 
     /**
-     * The unique seed of the generation of the Galaxy.
+     * The unique seed for the generation of the Galaxy.
      */
     private long seed;
 
+    // --- Constructors ---
+    
     /**
      * Default constructor.
      */
@@ -106,24 +116,27 @@ public final class Galaxy {
      * @param name name of the galaxy
      * @param type type of the galaxy
      * @param age age in billions of years
+     * @param diameter diameter in light-years
      * @param solarSystems list of solar systems in the galaxy
      * @param brightness overall brightness
      * @param blackHolePresence true if a central black hole is present
      * @param seed seed of the galaxy
      */
-    public Galaxy(int id, String name, GalaxyTypes type, double age,
+    public Galaxy(int id, String name, GalaxyTypes type, double age, double diameter,
                   ArrayList<SolarSystem> solarSystems,
                   String brightness, boolean blackHolePresence, long seed) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.age = age;
+        this.diameter = diameter;
         this.solarSystems = solarSystems;
         this.brightness = brightness;
         this.blackHolePresence = blackHolePresence;
     }
 
-    // --- Getters and setters with Javadoc ---
+    // --- Getters and setters ---
+    
     /**
      * @return the galaxy id
      */
@@ -178,6 +191,20 @@ public final class Galaxy {
      */
     public void setAge(double age) {
         this.age = age;
+    }
+
+    /**
+     * @return the diameter of the galaxy
+     * */
+    public double getDiameter() {
+        return diameter;
+    }
+
+    /**
+     * @param diameter the diameter to set
+     * */
+    public void setDiameter(double diameter) {
+        this.diameter = diameter;
     }
 
     /**
@@ -237,20 +264,22 @@ public final class Galaxy {
     }
 
     // --- Object overrides ---
+    
     /**
      * @return hash code including all fields
      */
-    @Override
+    @Override    
     public int hashCode() {
         int hash = 3;
-        hash = 17 * hash + this.id;
-        hash = 17 * hash + Objects.hashCode(this.name);
-        hash = 17 * hash + Objects.hashCode(this.type);
-        hash = 17 * hash + (int) (Double.doubleToLongBits(this.age) ^ (Double.doubleToLongBits(this.age) >>> 32));
-        hash = 17 * hash + Objects.hashCode(this.solarSystems);
-        hash = 17 * hash + Objects.hashCode(this.brightness);
-        hash = 17 * hash + (this.blackHolePresence ? 1 : 0);
-        hash = 17 * hash + (int) (this.seed ^ (this.seed >>> 32));
+        hash = 29 * hash + this.id;
+        hash = 29 * hash + Objects.hashCode(this.name);
+        hash = 29 * hash + Objects.hashCode(this.type);
+        hash = 29 * hash + (int) (Double.doubleToLongBits(this.age) ^ (Double.doubleToLongBits(this.age) >>> 32));
+        hash = 29 * hash + (int) (Double.doubleToLongBits(this.diameter) ^ (Double.doubleToLongBits(this.diameter) >>> 32));
+        hash = 29 * hash + Objects.hashCode(this.solarSystems);
+        hash = 29 * hash + Objects.hashCode(this.brightness);
+        hash = 29 * hash + (this.blackHolePresence ? 1 : 0);
+        hash = 29 * hash + (int) (this.seed ^ (this.seed >>> 32));
         return hash;
     }
 
@@ -260,7 +289,7 @@ public final class Galaxy {
      * @param obj the object to compare
      * @return {@code true} if all fields match, otherwise {@code false}
      */
-    @Override
+    @Override    
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -278,7 +307,7 @@ public final class Galaxy {
         if (Double.doubleToLongBits(this.age) != Double.doubleToLongBits(other.age)) {
             return false;
         }
-        if (!Objects.equals(this.brightness, other.brightness)) {
+        if (Double.doubleToLongBits(this.diameter) != Double.doubleToLongBits(other.diameter)) {
             return false;
         }
         if (this.blackHolePresence != other.blackHolePresence) {
@@ -288,6 +317,9 @@ public final class Galaxy {
             return false;
         }
         if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.brightness, other.brightness)) {
             return false;
         }
         if (this.type != other.type) {
@@ -311,6 +343,7 @@ public final class Galaxy {
                 + ", name=" + name
                 + ", type=" + type
                 + ", age=" + age
+                + ", diameter=" + diameter
                 + ", solarSystems=" + solarSystems
                 + ", brightness=" + brightness
                 + ", blackHolePresence=" + blackHolePresence
