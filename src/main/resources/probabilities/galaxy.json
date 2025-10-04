@@ -1,0 +1,33 @@
+{
+  "type_weights": {
+    "SPIRAL": 0.65,
+    "ELLIPTICAL": 0.20,
+    "IRREGULAR": 0.15
+  },
+
+  "galaxy_types": {
+    "SPIRAL": {
+      "diameter": { "min":  30000, "max":  100000 },
+      "solar_systems": { "min":  5000, "max":  200000 },
+      "brightness": { "LOW":  0.20, "MEDIUM":  0.60, "HIGH":  0.20 },
+      "black_hole_presence": 0.90
+    },
+    "ELLIPTICAL": {
+      "diameter": { "min": 20000, "max":  200000 },
+      "solar_systems": { "min": 10000, "max": 300000 },
+      "brightness": { "LOW": 0.10, "MEDIUM": 0.40, "HIGH":  0.50 },
+      "black_hole_presence": 0.95
+    },
+    "IRREGULAR": {
+      "diameter": { "min": 10000, "max": 30000 },
+      "solar_systems": { "min": 1000, "max": 30000 },
+      "brightness": { "LOW": 0.50, "MEDIUM": 0.45, "HIGH": 0.05},
+      "black_hole_presence": 0.50
+    }
+  },
+
+  "seed": { "min": -238754, "max": 2758637},
+
+  "galaxy_age": { "min": 10, "max":  14 }
+
+}
